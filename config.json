@@ -1,0 +1,4 @@
+{
+  "DATASET": "google_analytics",
+  "TABLE": "events"
+}
