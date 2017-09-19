@@ -9,7 +9,7 @@ function timestamp(){
   return match[1] + ' ' + match[2];
 }
 
-exports.ingestGA2 = function ingestGA (req, res) {
+exports.ingestGA = function ingestGA (req, res) {
   res.header('Access-Control-Allow-Origin', "*");
   res.header('Access-Control-Allow-Methods', 'GET');
 
