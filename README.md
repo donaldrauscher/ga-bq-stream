@@ -9,24 +9,22 @@ npm init
 sudo npm install --save @google-cloud/bigquery
 ```
 
-## 1. Test cloud functions with local emulator (optional)
+## 1. Setup BigQuery dataset
 ```
-functions --help
-functions start
-functions deploy logGA --trigger-http
-functions call logGA --data='{"message":"Hello World!"}'
-functions logs read
-functions stop
+source bigquery_prep.sh
 ```
+This will create a dataset called 'google_analytics' and a tabled called 'events' where the raw GA events will be stored.
+
 
 ## 2. Deploy cloud function for ingesting BQ events
 ```
-bq mk google_analytics
-<command for making table + schema>
 gsutil mb BUCKET-NAME
 gcloud beta functions deploy ingestGA --stage-bucket BUCKET-NAME --trigger-http
 gcloud beta functions delete ingestGA
 ```
+
+Replace BUCKET-NAME with a name of your choosing.  This bucket will contain a .zip of your deployed cloud function.
+
 
 ## 3. Add client-side JS to route GA events to newly-created cloud function
 
