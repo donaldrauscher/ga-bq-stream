@@ -6,7 +6,6 @@ function RouteGAData(tracker) {
             var payLoad = model.get('hitPayload');
             originalSendHitTask(model);
             var routeRequest = new XMLHttpRequest();
-            routeRequest.setRequestHeader("Content-type", "application/json");
             var routePath = "https://REGION-PROJECT.cloudfunctions.net/ingestGA";
             routeRequest.open('GET', routePath + "?" + payLoad, true);
             routeRequest.send();
