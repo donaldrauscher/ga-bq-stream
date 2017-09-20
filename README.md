@@ -1,3 +1,5 @@
+You can find my blog post on this project [here](http://donaldrauscher.com/ga-bq-stream).
+
 ## 0. Install Node.js
 ```
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
