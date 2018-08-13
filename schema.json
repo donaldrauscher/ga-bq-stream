@@ -1,0 +1,50 @@
+[
+  {
+    "name": "version",
+    "type": "STRING"
+  },
+  {
+    "name": "tracking_id",
+    "type": "STRING"
+  },
+  {
+    "name": "document_location",
+    "type": "STRING"
+  },
+  {
+    "name": "hit_type",
+    "type": "STRING"
+  },
+  {
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "name": "client_id",
+    "type": "STRING"
+  },
+  {
+    "name": "user_language",
+    "type": "STRING"
+  },
+  {
+    "name": "event_category",
+    "type": "STRING"
+  },
+  {
+    "name": "event_action",
+    "type": "STRING"
+  },
+  {
+    "name": "event_label",
+    "type": "STRING"
+  },
+  {
+    "name": "event_value",
+    "type": "STRING"
+  },
+  {
+    "name": "timestamp",
+    "type": "DATETIME"
+  }
+]
